@@ -7,6 +7,11 @@ import java.util.List;
 public class TaxAccountants {
   public static void calculateTaxes(Taxable t) {}
 
+//  public static void showThing(List<? extends Object> l) {
+  public static void showThing(List<?> l) {
+    Object obj = l.get(0);
+  }
+
 //  public static <F extends Taxable & Runnable> void calculateBulkTaxes(List<F> lt) {
   public static void calculateBulkTaxes(List<? extends Taxable> lt) {
 //    lt.add(new Corporations());  // would break with a List<Individual>

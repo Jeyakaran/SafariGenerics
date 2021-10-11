@@ -2,10 +2,7 @@ package simple;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class UseAList {
   public static List<CharSequence> doStuff(List<String> ls) {return null;}
@@ -38,5 +35,15 @@ public class UseAList {
     var z = b ? x : y; // combinations of interfaces
 //    Serializable & Comparable z = b ? x : y; // combinations of interfaces
 //    z.compareTo()
+
+    List<String> ls = null;
+    if (ls instanceof List/*<String>*/) {
+      System.out.println("yes");
+    }
   }
+/*
+  public static void showAll(List<String> ls) {}
+//  public static void showAll(Collection<String> ls) {}
+  public static void showAll(List<LocalDate> ls) {} // Generics don't differentiate overloads...
+*/
 }
