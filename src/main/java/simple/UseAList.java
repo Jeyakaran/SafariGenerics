@@ -1,5 +1,6 @@
 package simple;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class UseAList {
-
+  public static List<CharSequence> doStuff(List<String> ls) {return null;}
 //  public static <E> E[] asArray(List<E> stuff) {
 //    E[] result = new E[stuff.size()];
 //  }
@@ -33,6 +34,9 @@ public class UseAList {
     boolean b = true;
     int x = 99;
     String y = "200";
-//    var z = b ? x : y; // combinations of interfaces
+//    Object z = b ? x : y; // combinations of interfaces
+    var z = b ? x : y; // combinations of interfaces
+//    Serializable & Comparable z = b ? x : y; // combinations of interfaces
+//    z.compareTo()
   }
 }
